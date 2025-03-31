@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OSINT Deep Dive Writeup - CyberTapSecurity">
+  <title>OSINT Deep Dive - CyberTapSecurity</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="../assets/images/CTS-Logo.png" alt="CyberTapSecurity Logo" style="width: 120px;">
+      <span>CyberTapSecurity</span>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../services.html">Services</a>
+      <a href="../defense.html">Defense</a>
+      <a href="../writeups.html">Writeups</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Writeup Section -->
+  <section class="writeup">
+    <h1>OSINT Deep Dive: Uncovering Hidden Information</h1>
+    <p class="intro">
+      In this writeup, I delve deep into a comprehensive Open Source Intelligence (OSINT) challenge. The goal was to collect, analyze, and process publicly available data to discover hidden insights and track potential threats.
+    </p>
+
+    <h2>Challenge Overview</h2>
+    <p>
+      The challenge focused on utilizing multiple OSINT tools and techniques to gather actionable intelligence about a target (a person, organization, or domain). The objective was to identify weak points, discover personal information, and build a comprehensive profile.
+    </p>
+
+    <h2>OSINT Tools Used</h2>
+    <ul>
+      <li><strong>Shodan:</strong> A search engine for Internet-connected devices, useful for identifying exposed servers and devices.</li>
+      <li><strong>Maltego:</strong> A tool used to visualize relationships between various pieces of data, ideal for mapping connections and identifying threats.</li>
+      <li><strong>theHarvester:</strong> A reconnaissance tool that gathers information about email addresses, domains, and subdomains from public sources.</li>
+      <li><strong>Google Dorking:</strong> Using advanced search operators to extract hidden data from Google's search engine.</li>
+      <li><strong>Social Media Analysis:</strong> Scraping publicly available data from social media platforms (Twitter, LinkedIn, Facebook) to build a more complete profile of the target.</li>
+    </ul>
+
+    <h2>Steps Taken</h2>
+    <ol>
+      <li><strong>Initial Target Identification:</strong> Selected the target and began researching their online presence, starting with simple searches and gradually narrowing down specific data points.</li>
+      <li><strong>Using Shodan:</strong> Ran searches on Shodan to identify open ports, exposed services, and any IoT devices related to the target.</li>
+      <li><strong>Deep Analysis with Maltego:</strong> Visualized the collected data to map out relationships between email addresses, phone numbers, domains, and social media accounts.</li>
+      <li><strong>Gathering Emails and Subdomains:</strong> Used theHarvester and Google Dorking to collect email addresses and subdomains linked to the target’s domain.</li>
+      <li><strong>Social Media Scraping:</strong> Analyzed publicly available data from social media accounts to identify personal connections, locations, and potential threats.</li>
+    </ol>
+
+    <h2>Findings</h2>
+    <p>
+      The analysis revealed the following critical findings:
+    </p>
+    <ul>
+      <li>Multiple personal details such as the target's phone number, email addresses, and social media profiles were easily found.</li>
+      <li>Several unprotected servers were exposed, providing sensitive information about the target's infrastructure.</li>
+      <li>Public social media profiles revealed information that could lead to potential spear-phishing attacks.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      The OSINT challenge demonstrated how critical it is to secure publicly available information, as attackers can leverage such data to gain access to personal or corporate networks. The findings underscore the importance of personal information hygiene and proactive monitoring of online profiles.
+    </p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 CyberTapSecurity | <a href="../contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>

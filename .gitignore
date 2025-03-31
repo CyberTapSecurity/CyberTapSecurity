@@ -1,0 +1,35 @@
+# Node modules (if you use any Node.js for development)
+node_modules/
+
+# MacOS specific files
+.DS_Store
+
+# VSCode specific files
+.vscode/
+
+# Build output
+/dist/
+/build/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+
+# IDE and project-related files
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+# Log files
+*.log
+
+# Cache files
+.cache/
+
+# NPM package-lock file
+package-lock.json

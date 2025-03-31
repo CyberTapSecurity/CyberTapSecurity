@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="National Cyber League - Forensics Writeup">
+  <title>NCL Forensics Writeup - CyberTapSecurity</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="../assets/images/CTS-Logo.png" alt="CyberTapSecurity Logo" style="width: 120px;">
+      <span>CyberTapSecurity</span>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../services.html">Services</a>
+      <a href="../defense.html">Defense</a>
+      <a href="../writeups.html">Writeups</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Writeup Section -->
+  <section class="writeup">
+    <h1>NCL Forensics Writeup</h1>
+    <p class="intro">
+      This writeup details the forensics challenges from the National Cyber League (NCL), where I utilized various forensic tools to investigate and recover digital evidence related to suspicious activities.
+    </p>
+
+    <h2>Challenge Overview</h2>
+    <p>
+      In this forensics challenge, the goal was to recover deleted files, analyze logs, and extract crucial data from a compromised machine. The challenge involved parsing through evidence files and identifying traces of malicious activity, using industry-standard tools like Autopsy, FTK Imager, and Sleuth Kit.
+    </p>
+
+    <h2>Tools Used</h2>
+    <ul>
+      <li>Autopsy: A graphical interface to The Sleuth Kit (TSK), for analyzing disk images.</li>
+      <li>FTK Imager: For acquiring disk images and extracting data.</li>
+      <li>Sleuth Kit: A suite of command-line tools for digital forensics.</li>
+      <li>Wireshark: For packet analysis in network traffic investigation.</li>
+    </ul>
+
+    <h2>Steps Taken</h2>
+    <ol>
+      <li><strong>Initial Analysis:</strong> Loaded the disk image into Autopsy to begin an initial inspection of the file system.</li>
+      <li><strong>File Carving:</strong> Used FTK Imager and Autopsy to locate and recover deleted files that could contain evidence.</li>
+      <li><strong>Log Analysis:</strong> Examined system logs and application logs for signs of intrusion or suspicious behavior.</li>
+      <li><strong>Network Traffic Analysis:</strong> Captured network traffic using Wireshark to identify potential malicious network connections and data exfiltration.</li>
+    </ol>
+
+    <h2>Findings</h2>
+    <p>
+      The analysis revealed several key pieces of evidence, including:
+    </p>
+    <ul>
+      <li>Deleted files with suspicious names that were recovered and found to contain malware executables.</li>
+      <li>Log entries showing multiple failed login attempts from an IP address associated with a known botnet.</li>
+      <li>Network traffic showing an abnormal amount of data being sent to an external IP, confirming data exfiltration activities.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      The forensics challenge showcased how essential digital forensics is in uncovering hidden data and malicious activity. By using the right tools and techniques, we were able to recover critical evidence and understand the full scope of the breach. The findings were crucial for building the case of the attack and understanding the attacker's methodology.
+    </p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 CyberTapSecurity | <a href="../contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>
